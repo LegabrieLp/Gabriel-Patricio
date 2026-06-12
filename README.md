@@ -44,9 +44,9 @@
 
 <br clear="both">
 
-<!-- O JOGO DO SPACE INVADERS ANIMATION -->
-
+<!-- O JOGO DO SPACE INVADERS ANIMATION (Nome do arquivo alinhado com a Action) -->
 <div align="center">
   <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/invaders-output/github-stats-invaders.svg" alt="Space Invaders animation" />
 </div>
+
 ###
