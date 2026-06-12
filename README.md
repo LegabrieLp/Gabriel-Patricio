@@ -1,10 +1,3 @@
-Aqui está o código completo, 100% funcional e corrigido especificamente para o seu perfil (LegabrieLp).
-
-Para resolver o problema da cobrinha de forma definitiva sem deixar o link quebrado, substituí o link antigo por um gerador dinâmico de contribuições em formato de gráfico retro/pixelado (estilo 3D Grid), que funciona instantaneamente sem precisar configurar nenhuma Action complexa por trás.
-
-Substitua todo o conteúdo do seu README.md por este bloco:
-
-HTML
 <h2 align="left">Hi 👋! My name is Gabriel and I'm a Developer!</h2>
 
 ###
