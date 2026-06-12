@@ -31,6 +31,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: invaders-output
+          # A ação jstrieb/github-stats-invaders gera o arquivo no diretório raiz por padrão
           build_dir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
