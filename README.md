@@ -44,9 +44,9 @@
 
 <br clear="both">
 
-<!-- Gráfico de Contribuições Gamer Dinâmico (Substituindo a cobrinha estática/quebrada) -->
+<!-- O JOGO DO SPACE INVADERS ANIMATION -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LegabrieLp&theme=tokyonight&area=true&category=commits" alt="Activity Graph" width="100%" />
+  <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/invaders-output/github-contribution-grid-invaders.svg" alt="Space Invaders animation" />
 </div>
 
 ###
