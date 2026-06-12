@@ -1,37 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+
 name: Generate Space Invaders
 
+# Controls when the workflow will run
 on:
-  schedule: # Roda automaticamente a cada 12 horas
-    - cron: "0 */12 * * *"
-  workflow_dispatch: # Permite rodar manualmente a qualquer momento
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # This workflow contains a single job called "build"
   build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout target repo
-        uses: actions/checkout@v3
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
 
-      # Gera a animação da navezinha do Space Invaders atirando nos blocos
+      # Runs a set of commands using the runners shell
       - name: GitHub Invaders
-        uses: jstrieb/github-stats-invaders@v2.1.1
+        uses: Platane/snk@v2.0.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # Configura as cores para combinar com o seu tema Tokyonight
-          bg_color: "#1a1b26"
-          text_color: "#7aa2f7"
-          grid_color: "#444b6a"
-          l1_color: "#b4f9f8"
-          l2_color: "#2ac3de"
-          l3_color: "#7dcfff"
-          l4_color: "#7aa2f7"
-
-      # Salva a animação gerada na branch invaders-output
-      - name: Deploy to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: invaders-output
-          # A ação jstrieb/github-stats-invaders gera o arquivo no diretório raiz por padrão
-          build_dir: .
+          # the github user name to read the contribution graph from
+          github_user_name: LegabrieLp
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
+          # a github token is required to fetch the contribution graph from the github API
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
