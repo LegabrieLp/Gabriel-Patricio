@@ -37,3 +37,5 @@ const Agent = {
   sleepSchedule: "Non-existent",
   currentObjective: "Refactoring the world, one commit at a time."
 };
+
+![Texto](https://img.shields.io/badge/TEXTO_DA_BADGE-COR_HEX?style=for-the-badge&logo=NOME_DO_ICONE&logoColor=COR_DO_ICONE)
