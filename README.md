@@ -50,5 +50,5 @@
 <br clear="both">
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/invaders-output/github-stats-invaders.svg" alt="Space Invaders animation" />
+  <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/invaders-output/github-contribution-grid-snake.svg" />
 </div>
