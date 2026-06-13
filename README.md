@@ -50,5 +50,5 @@
 <br clear="both">
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/pacman-output/dist/pacman.svg" alt="Pac-Man animation" />
+  <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/pacman-output/dist/pacman.gif" alt="Pac-Man animation" />
 </div>
