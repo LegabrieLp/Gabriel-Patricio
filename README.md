@@ -50,5 +50,5 @@
 <br clear="both">
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/invaders-output/dist/github-stats-invaders.svg" alt="Space Invaders animation" />
+  <img src="https://raw.githubusercontent.com/LegabrieLp/LegabrieLp/pacman-output/dist/pacman.svg" alt="Pac-Man animation" />
 </div>
