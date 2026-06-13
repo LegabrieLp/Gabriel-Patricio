@@ -13,14 +13,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Generate Pac-Man animation
-        uses: Platane/snk/svg-only@v3
+      - uses: actions/checkout@v3
+
+      - name: Generate Pac-Man
+        uses: buluma/pacman-contribution-graph-action@main
         with:
           github_user_name: LegabrieLp
-          outputs: |
-            dist/pacman.svg?color_snake=yellow&color_dots=#0d1117,#1a1b27,#2d2f4a,#4e5177,#6e72b5&color_food=#FFD700
+          gif_out_path: dist/pacman.gif
 
-      - name: Push to branch pacman-output
+      - name: Push to pacman-output
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: pacman-output
