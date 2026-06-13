@@ -13,14 +13,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Generate Pac-Man
-        uses: gregrickaby/github-profile-readme-pacman@main
+      - name: Generate snake Pac-Man style
+        uses: Platane/snk/svg-only@v3
         with:
-          github_username: LegabrieLp
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          output: dist/pacman.svg
+          github_user_name: LegabrieLp
+          outputs: |
+            dist/pacman.svg?color_snake=yellow&color_dots=#0d1117,#1a1b27,#2d2f4a,#4e5177,#6e72b5
 
       - name: Push to pacman-output
         uses: crazy-max/ghaction-github-pages@v4
