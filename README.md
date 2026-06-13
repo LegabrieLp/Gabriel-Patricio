@@ -47,10 +47,6 @@
 
 ###
 
-<img src="https://github-profile-trophy.vercel.app/?username=LegabrieLp&theme=tokyonight&no-frame=true&row=1&column=6" alt="trophies" />
-
-###
-
 <br clear="both">
 
 <div align="center">
