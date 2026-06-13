@@ -1,4 +1,6 @@
-name: Generate Pac-Man animation
+Essa action não existe mais. Vamos usar uma que funciona de verdade:
+.github/workflows/pacman.yml
+yamlname: Generate Pac-Man animation
 
 on:
   schedule:
@@ -13,13 +15,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Generate Pac-Man
-        uses: buluma/pacman-contribution-graph-action@main
+        uses: gregrickaby/github-profile-readme-pacman@main
         with:
-          github_user_name: LegabrieLp
-          gif_out_path: dist/pacman.gif
+          github_username: LegabrieLp
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          output: dist/pacman.svg
 
       - name: Push to pacman-output
         uses: crazy-max/ghaction-github-pages@v4
