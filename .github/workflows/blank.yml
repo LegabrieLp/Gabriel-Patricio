@@ -1,6 +1,4 @@
-Essa action não existe mais. Vamos usar uma que funciona de verdade:
-.github/workflows/pacman.yml
-yamlname: Generate Pac-Man animation
+name: Generate Pac-Man animation
 
 on:
   schedule:
